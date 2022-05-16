@@ -1,0 +1,26 @@
+<!-- Este es un comentario -->
+
+{% extends "layout.html"%}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Hola tripulantes!</h1>
+    <p class="lead">En esta página web han de encontrar los enunciados y las soluciones de los retos,
+        a medida que vayamos progresando en el curso les estaré mostrando por este medio la solución de cada uno de los
+        retos para que
+        ustedes puedan ayudarse y ver la diferencia con el código que ustedes mismos implementaron para cada uno de
+        los retos que les tocó.
+
+        Saludos.
+    </p>
+    <div class="eriquevergara">
+        -Enrique Vergara
+    </div>
+    <hr class="my-4">
+    <p>Haciendo click en el siguiente botón podrán ver la solución de los retos, busca la variente del reto
+        que te tocó y así mismo lo copias y pegas en el VPL del Moodle.</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{{ url_for('solution') }}" role="button">Ver solución retos</a>
+    </p>
+</div>
+{% endblock %}
