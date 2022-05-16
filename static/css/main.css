@@ -5,7 +5,8 @@ body{
     background: #0f0c29;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+	margin: 0;
+	margin-bottom: 40px;
 }
 
 p {
@@ -15,6 +16,50 @@ h1 {
     color: rgb(255, 0, 55);
 }
 
+.site-footer {
+	background-color:#000000;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+}
+.site-footer,.site-footer a { color:#ffffff}
+
+.footer-container {
+    display: grid;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer {
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	color: white;
+}
+
+.footer ul a {
+	text-align: center;
+	display: flex;
+    gap: 10px;/* Espaceado entre las columnas de 10px */
+    align-items: flex-start;
+    justify-content: center;
+}
+
+a i {
+	transition: all 0.3s linear;
+}
+
+a:hover i {
+	transform: scale(1.5);
+}
+
+.fab:hover {
+	color: blue;
+}
 
 /*
 /*	Copyright (c) 2022 Frenify
@@ -48,24 +93,30 @@ h1 {
 :root{
 	--mc: #3452ff;
 }
-html{
+/* html{
 	overflow-x: hidden;
 	padding: 0px;
 	margin: 0px
-}
+} */
+html {
+	min-height: 100%;
+	position: relative;
+  }
 *:after,
 *:before,
 *{
 	box-sizing: border-box;
 }
-body{
+/* body{
 	font-family: 'Jost',sans-serif;
 	font-size: 18px;
 	letter-spacing: 0;
 	font-weight: 400;
 	color: #0b0a0c;
 	position: relative;
-}
+	margin: 0;
+	margin-bottom: 40px;
+} */
 [class^="deebo_fn_"]{
 	width: 100%;
 	float: left;
@@ -1402,7 +1453,7 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 .section_tips .tips_content{
 	width: 100%;
 	float: left;
-	margin-bottom: 20px;
+	margin-bottom: 100px;
 }
 .about_tips{
 	display: block;
@@ -2141,6 +2192,8 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 
 .social {
     margin: 50px;
+	position: absolute;
+	bottom: 0;
 }
 
 .social p {
